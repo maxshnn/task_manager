@@ -19,9 +19,7 @@ class _NotePageState extends State<NotePage> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => NoteBloc(
-        noteUseCase: injection(),
-      )..add(GetAllNoteEvent()),
+      create: (context) => injection<NoteBloc>()..add(GetAllNoteEvent()),
       child: BlocConsumer<NoteBloc, NoteState>(
         listener: (context, state) {
           setState(() {
