@@ -1,16 +1,22 @@
-# task_manager
+# Notes 
 
-A new Flutter project.
+В этом проекте использовался Clean Architecture, Bloc, Isar (если бы можно было взять что-то другой, то взял бы sqflite конкретно для этого проекта), get_it для внедреня зависимостей.
 
-## Getting Started
+За недоделанные задачи прошу понять и простить, тестовые задания уже порядком надоедают. Смогу объяснить какие подходы использовал на проектах и что мог бы изменить в этом проекте.
 
-This project is a starting point for a Flutter application.
+Чтобы подключить зависимости:
+```
+flutter pub run
+```
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Для старта генерации:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+dart run build_runner build
+```
+
+## Фичи
+ - Поиск по заметкам
+ - Выделение элементов (зажать карточку)
+ - Удаление кнопкой "удалить", кнопка появляется когда есть хотя-бы один выделенный элемент
